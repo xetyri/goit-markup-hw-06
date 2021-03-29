@@ -17,6 +17,10 @@
 
 body {
   font-family: var(--main-font);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 h1,
@@ -64,19 +68,23 @@ img {
   background-color: var(--color-secondary);
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-btn {
   width: 200px;
   height: 50px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
   background-color: var(--accent-color);
   color: var(--color-main);
   border: none;
   border-radius: 4px;
-  margin-left: 485px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -92,17 +100,18 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 25px;
 }
 
 .logotype-light-theme {
   color: var(--color-logo);
   padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logotype-dark-theme {
   color: var(--color-main);
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .logo-Web {
@@ -113,7 +122,6 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 50px;
   text-align: center;
@@ -249,10 +257,8 @@ img {
 /* ----- quality ----- */
 
 .description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-subtext);
 }
 
@@ -260,7 +266,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
   margin-bottom: 10px;
@@ -324,7 +329,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-main);
   background: rgba(47, 48, 58, 0.8);
@@ -366,19 +370,14 @@ img {
 
 .name-team {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   text-align: center;
   margin-bottom: 10px;
 }
 
 .position-team {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--color-subtext);
   text-align: center;
   margin-bottom: 16px;
@@ -480,6 +479,12 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact-list-item {
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+}
+
 .contact-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -500,17 +505,14 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-main);
   margin-bottom: 20px;
 }
 
 .contact-list-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-main);
   transition-property: all;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -561,10 +563,7 @@ img {
   border-radius: 4px;
   background-color: var(--color-secondary);
   color: var(--color-main);
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
   padding: 15px 16px;
   margin-right: 12px;
 }
@@ -611,9 +610,7 @@ img {
 
 .filter-btn {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--color-title);
   background-color: var(--color-team);
@@ -652,10 +649,6 @@ img {
 }
 
 .project-type {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--color-subtext);
 }
 
@@ -700,10 +693,8 @@ img {
   left: 0;
   background: rgba(33, 150, 243, 0.9);
   color: var(--color-main);
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
@@ -814,9 +805,8 @@ img {
 
 .modal-form-field {
   margin-bottom: 10px;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1, 16;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--color-subtext);
 }
@@ -826,9 +816,8 @@ img {
 }
 
 .modal-form-user-title {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1, 16;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--color-subtext);
 }
@@ -861,8 +850,8 @@ img {
 
 .modal-form-check-desc {
   display: flex;
+  justify-content: center;
   margin-bottom: 30px;
-  font-weight: 400;
   font-size: 14px;
   color: var(--color-subtext);
 }
@@ -896,8 +885,6 @@ img {
   width: 200px;
   height: 50px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
   align-self: center;
@@ -919,7 +906,6 @@ img {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-title);
   margin-bottom: 12px;
 }

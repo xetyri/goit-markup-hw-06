@@ -53,13 +53,13 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="quality">
-            <div class="container">
+            <div class="container ">
                 <h2 class="visually-hidden">Наши качества</h2>
                 <ul class="quality-list list">
                     <li class="quality-item">
@@ -411,13 +411,11 @@
                 <h3 class="foot-suptitle">подпишитесь на рассылку</h3>
                 <form action="#" class="foot-form-size">
                     <input type="email" class="action-footer-email" required autocomplete="off" placeholder="E-mail">
-                    <button type="submit" class="modal-form-btn">
-                        <div class="block-action-btn">
-                            Подписаться
-                            <svg class="svg-color" width="24px" height="24px">
-                                <use href="./images/icons/icons.svg#telegram"></use>
-                            </svg>
-                        </div>
+                    <button type="submit" class="modal-form-btn block-action-btn">
+                        Подписаться
+                        <svg class="svg-color" width="24px" height="24px">
+                            <use href="./images/icons/icons.svg#telegram"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -433,7 +431,7 @@
             </button>
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
             <form action="#" class="modal-form">
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Имя
                     <span class="modal-form-input-wrapper">
                         <input type="text" name="user-name" required minlength="2" class="modal-form-input" autocomplete="off">
@@ -442,7 +440,7 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Телефон
                     <span class="modal-form-input-wrapper">
                         <input type="tel" name="user-phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" title="096-111-11-11"
@@ -452,7 +450,7 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Почта
                     <span class="modal-form-input-wrapper">
                         <input type="email" name="user-email" required class="modal-form-input" autocomplete="off">
@@ -461,9 +459,9 @@
                         </svg>
                     </span>
                 </label>
-                <label for="" class="modal-form-user-message">
+                <label class="modal-form-user-message">
                     <span class="modal-form-user-title">Комментарий</span>
-                    <textarea type="email" name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
                 <input type="checkbox" name="user-term" id="user-term" class="modal-form-term visually-hidden">
                 <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp; 
